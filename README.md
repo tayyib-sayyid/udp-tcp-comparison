@@ -100,6 +100,10 @@ Throughput: 680200.12 bytes/sec
 
 ---
 
+### Hinderences:
+
+TCP performed faster for 100 messages (total of 10 kB). The correct theoretical behaviour was achieved after a key modification of sending 1000 packets of (approximately) 1400 bytes each (and doubling the buffer size to 2048 bits). This emulates real world applications much more realistically; when dealing with larger and continuous amounts of data. In the assignment's original contraint of 100 messages, the fixed overhead (of UDP) was not significant and TCP's optimizations led those small packets seem very fast. 
+
 ## 📌 How This Was Accomplished
 
 This project was implemented using **Python’s socket library** to create TCP and UDP client-server models. The understanding of networking concepts was strengthened using references from:
