@@ -4,7 +4,7 @@ This project compares the performance of TCP and UDP in terms of **latency**, **
 
 ---
 
-## 📌 How to Run the Programs
+## 📌 How to Run the Programs (instruction set valid for Linux only at this time!)
 
 ### 1 **Clone the Repository**
 ```bash
