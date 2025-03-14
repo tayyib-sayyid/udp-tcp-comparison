@@ -1,4 +1,3 @@
-```markdown
 # TCP vs UDP Performance Comparison
 
 This project compares the performance of TCP and UDP in terms of **latency**, **throughput**, and **packet loss** by sending messages of approximately **1400 bytes** between a client and server. The experiment measures **Round-Trip Time (RTT)** and **data transmission efficiency** for both protocols.
@@ -7,20 +6,20 @@ This project compares the performance of TCP and UDP in terms of **latency**, **
 
 ## 📌 How to Run the Programs
 
-### 1️⃣ **Clone the Repository**
+### 1 **Clone the Repository**
 ```bash
 git clone https://github.com/tayyib-sayyid/udp-tcp-comparison.git
 cd udp-tcp-comparison
 ```
 
-### 2️⃣ **Run the TCP Server**
+### 2️ **Run the TCP Server**
 Open a terminal and start the TCP server:
 ```bash
 python3 tcp-server.py > tcp_server.log 2>&1 &
 ```
 This runs the TCP server in the background and logs the output to `tcp_server.log`.
 
-### 3️⃣ **Run the TCP Client**
+### 3️ **Run the TCP Client**
 Open a new terminal and start the TCP client:
 ```bash
 python3 tcp-client.py > tcp_client.log 2>&1
@@ -29,14 +28,14 @@ This sends **1000 messages** of **1400 bytes** each and logs the results to `tcp
 
 ---
 
-### 4️⃣ **Run the UDP Server**
+### 4️ **Run the UDP Server**
 Start the UDP server in a terminal:
 ```bash
 python3 udp-server.py > udp_server.log 2>&1 &
 ```
 This runs the UDP server in the background and logs its output.
 
-### 5️⃣ **Run the UDP Client**
+### 5️ **Run the UDP Client**
 Open another terminal and start the UDP client:
 ```bash
 python3 udp-client.py > udp_client.log 2>&1
